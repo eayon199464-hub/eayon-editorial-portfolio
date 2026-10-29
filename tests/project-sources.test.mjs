@@ -33,5 +33,10 @@ test('inline photo credits are omitted in both languages while project provenanc
   assert.ok(!app.includes('archive-credit'));
   assert.ok(!app.includes('archive.credit'));
   assert.ok(app.includes('archive.sources.map'));
-  assert.ok(app.includes('archive.recognitionNote'));
+  assert.ok(app.includes('团队项目荣誉') && app.includes('TEAM PROJECT RECOGNITION'));
+});
+test('award explanatory fine print is omitted without removing the team award list', () => {
+  const app = readFileSync(new URL('../src/App.jsx', import.meta.url), 'utf8');
+  assert.ok(!app.includes('archive.recognitionNote') && !app.includes('recognition-note'));
+  assert.ok(app.includes('item.awardsEn') && app.includes('item.awards'));
 });

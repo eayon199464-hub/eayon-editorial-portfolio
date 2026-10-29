@@ -5,3 +5,5 @@ Preserve the approved black/ivory editorial design, independent cover, three seq
 Run `npm test` and `npm run build` before publication. Preserve the Sites-compatible build files.
 
 This edition belongs only to `eayon199464-hub/eayon-editorial-portfolio` and its separate GitHub Pages address. Never publish it over `eayon199464-hub/tian-yixiong-resume-h5` or change that repository's Pages configuration.
+
+Per the October 29 refinement, omit the long explanatory paragraph beneath JOYCUBE awards in both languages. Preserve the team-recognition heading, award names, image watermarks, source links and internal provenance data.

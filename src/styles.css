@@ -117,7 +117,6 @@ img { display: block; max-width: 100%; }
 .archive-cover > .eyebrow { color: var(--muted); margin-bottom: 22px; }
 .archive-cover img { width: 100%; height: auto; object-fit: contain; }
 .has-archive .story-image-caption { text-shadow: none; }
-.recognition-note { margin-top: 18px; }
 .public-archive { border-top: 1px solid #bcb5aa; margin-top: 48px; padding-top: 32px; }
 .public-archive > h3 { margin: 20px 0; font: 400 clamp(29px, 2.7vw, 44px)/1.35 var(--serif); letter-spacing: -.03em; }
 .archive-context { font-size: 14px; line-height: 1.9; margin-bottom: 30px; }

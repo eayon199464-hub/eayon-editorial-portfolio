@@ -122,7 +122,7 @@ function Story({ item, cn, calm, close, onNext }) {
           {(cn ? item.facts : item.factsEn).map(fact => <p key={fact}>{fact}</p>)}
         </section>
         {item.awards && <section className="story-awards"><h3 className="eyebrow">{cn ? "团队项目荣誉" : "TEAM PROJECT RECOGNITION"}</h3>{(cn ? item.awards : item.awardsEn).map(a => <p key={a}>{a}</p>)}</section>}
-        {archive && <><p className="editorial-note recognition-note">{cn ? archive.recognitionNote : archive.recognitionNoteEn}</p><PublicArchive archive={archive} cn={cn} /></>}
+        {archive && <PublicArchive archive={archive} cn={cn} />}
         <button className="next-story" onClick={onNext}><span>{item.year === FEATURED.at(-1).year ? (cn ? "关于我与工作信念" : "ABOUT MY WORKING PRINCIPLE") : (cn ? "翻到下一章" : "TURN TO THE NEXT CHAPTER")}</span><ArrowRightIcon weight="light" size={28} /></button>
       </div>
     </motion.div>
